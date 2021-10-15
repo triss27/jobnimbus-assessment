@@ -1,5 +1,4 @@
 function hasMatchingBrackets(someString) {
-    console.log('type: ' + typeof someString);
     if (typeof someString !== "string") {
         return false;
     }
@@ -28,14 +27,5 @@ function hasMatchingBrackets(someString) {
 
     return true;
 }
-
-console.log(hasMatchingBrackets(['}{}', '{}']))
-console.log(hasMatchingBrackets('{}'));
-console.log(hasMatchingBrackets('}{'));
-console.log(hasMatchingBrackets('{{}'));
-console.log(hasMatchingBrackets(''));
-console.log(hasMatchingBrackets('{abc...xyz}'));
-console.log(hasMatchingBrackets('{}abc...xyz}'));
-console.log(hasMatchingBrackets('{{abc...xyz}'));
 
 module.exports = hasMatchingBrackets
